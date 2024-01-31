@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
 import TextBox from './components/TextBox';
+import './components/Expenses.css';
 
 function App() {
   const data = [
@@ -18,8 +19,10 @@ function App() {
   ]
   return (
     <div className='App'>
-      <ExpenseItem expenseData={data[0]}></ExpenseItem>
-      <ExpenseItem expenseData={data[1]}></ExpenseItem>
+      <div className='expenses'>
+        <ExpenseItem expenseData={data[0]}></ExpenseItem>
+        <ExpenseItem expenseData={data[1]}></ExpenseItem>
+      </div>
     </div>
   );
 }
