@@ -1,7 +1,8 @@
 import "./ExpenseItem.css"
 import ExpenseDate from "./ExpenseDate.js"
 
-function ExpenseItem(props) {
+
+const ExpenseItem = (props) => {
     return (
         <div className="expense-item">
             <ExpenseDate className='card' date={props.expenseData.date}></ExpenseDate>

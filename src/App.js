@@ -1,8 +1,8 @@
-import Card from './components/Card';
-import ExpenseItem from './components/ExpenseItem';
-import './components/Expenses.css';
+import Card from './components/UI/Card';
+import ExpenseItem from './components/Expenses/ExpenseItem';
+import './components/Expenses/Expenses.css';
 
-function App() {
+const App = () => {
   const data = [
     {
       date: new Date(2023, 9, 7),
