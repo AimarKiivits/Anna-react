@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/Card';
 import ExpenseItem from './components/ExpenseItem';
-import TextBox from './components/TextBox';
 import './components/Expenses.css';
 
 function App() {
@@ -19,10 +17,10 @@ function App() {
   ]
   return (
     <div className='App'>
-      <div className='expenses'>
+      <Card className='expenses'>
         <ExpenseItem expenseData={data[0]}></ExpenseItem>
         <ExpenseItem expenseData={data[1]}></ExpenseItem>
-      </div>
+      </Card>
     </div>
   );
 }
