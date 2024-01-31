@@ -19,9 +19,7 @@ function App() {
   return (
     <div className='App'>
       <ExpenseItem expenseData={data[0]}></ExpenseItem>
-      <TextBox></TextBox>
       <ExpenseItem expenseData={data[1]}></ExpenseItem>
-      <TextBox></TextBox>
     </div>
   );
 }
