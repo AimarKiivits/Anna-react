@@ -4,16 +4,18 @@ import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
-  const expenses = [
+  const DYMMY_EXPENSES = [
     {
+      id: 'id1',
       date: new Date(2023, 9, 7),
       title: "New book",
-      price: 69.69
+      amount: 69
     },
     {
+      id: 'id2',
       date: new Date(2666, 9, 7),
       title: "Genesis crystal",
-      price: "Soul"
+      amount: 1
     }
   ]
 
@@ -25,7 +27,7 @@ const App = () => {
   return (
     <div className='App'>
       <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
-      <Expenses expenses={expenses} />
+      <Expenses expenses={DYMMY_EXPENSES} />
     </div>
   );
 }
