@@ -1,9 +1,10 @@
-import Card from './components/UI/Card';
-import ExpenseItem from './components/Expenses/ExpenseItem';
 import './components/Expenses/Expenses.css';
+import './App.css';
+import NewExpense from './components/NewExpense/NewExpense';
+import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
-  const data = [
+  const expenses = [
     {
       date: new Date(2023, 9, 7),
       title: "New book",
@@ -15,12 +16,11 @@ const App = () => {
       price: "Soul"
     }
   ]
+
   return (
     <div className='App'>
-      <Card className='expenses'>
-        <ExpenseItem expenseData={data[0]}></ExpenseItem>
-        <ExpenseItem expenseData={data[1]}></ExpenseItem>
-      </Card>
+      <NewExpense></NewExpense>
+      <Expenses expenses={expenses} />
     </div>
   );
 }
