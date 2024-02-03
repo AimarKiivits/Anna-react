@@ -7,14 +7,26 @@ import Expenses from './components/Expenses/Expenses';
 const DYMMY_EXPENSES = [
   {
     id: 'id1',
-    date: new Date(2023, 9, 7),
+    date: new Date(2023, 11 , 7),
     title: "New book",
     amount: 69
   },
   {
     id: 'id2',
-    date: new Date(2666, 9, 7),
+    date: new Date(2666, 8, 7),
     title: "Genesis crystal",
+    amount: 1
+  },
+  {
+    id: 'id3',
+    date: new Date(2024, 9, 7),
+    title: "New pantaloons",
+    amount: 420
+  },
+  {
+    id: 'id4',
+    date: new Date(2666, 10, 7),
+    title: "Stellar jade",
     amount: 1
   }
 ]
