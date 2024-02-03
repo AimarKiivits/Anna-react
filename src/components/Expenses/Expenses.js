@@ -21,7 +21,6 @@ const Expenses = (props) => {
     const filteredExpenses = props.expenses.filter((expense) => {
         return filteredYear === '' || expense.date.getFullYear().toString() === filteredYear;
     });
-    console.log(filteredExpenses + 'filteredExpenses')
 
     return(
         <Card className="expenses">
